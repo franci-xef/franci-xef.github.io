@@ -5,21 +5,26 @@
 
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/content.css">
-
-        <script src="js/main.js"></script>
     </head>
     <body>
         <div id="main">
             <div id="header"><p>Benvenuto nella mia To Do List!!</p></div>
             <div id="content">
-                <div id="add"><button id="add_button">+ aggiungi</button></div>
+                <div id="buttonContainer"><button id="add">+ aggiungi</button></div>
                 <div id="listContainer">
-                    <div class="checkList"></div>
-                    <div class="checkList"></div>
-                    <div class="checkList"></div>
+                    <div class="checkList" id="morning">
+                        <div class="checkTitle"><p>Mattina</p></div>
+                    </div>
+                    <div class="checkList" id="afternoon">
+                        <div class="checkTitle"><p>Pomeriggio</p></div>
+                    </div>
+                    <div class="checkList" id="evening">
+                        <div class="checkTitle"><p>Sera</p></div>
+                    </div>
                 </div>
             </div>
             <div id="footer"></div>
         </div>
+        <script src="js/main.js"></script>
     </body>
 </html>
