@@ -1,0 +1,30 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    border: 2px solid black;
+}
+
+#header {
+    display: flex;
+    margin: 10px;
+
+    border: 2px solid black;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    height: 100%;
+
+    border: 2px solid black;
+}
+
+#footer {
+    display: flex;
+    margin: 10px;
+
+    border: 2px solid black;
+}
