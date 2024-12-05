@@ -2,6 +2,7 @@ const morningDiv = document.getElementById("morning")
 const afternoonDiv = document.getElementById("afternoon")
 const eveningDiv = document.getElementById("evening")
 
+
 function addCheck() {
     document.querySelector("#morning").addEventListener("click", addMorningCheck)
     morningDiv.classList.add("animation")
@@ -26,21 +27,33 @@ function removeClass() {
 }
 
 function addMorningCheck() {
+    const checkButton = document.createElement("input")
+    checkButton.type = "checkbox"
+
     removeListener()
     removeClass()
 
+    morningDiv.appendChild(checkButton)
 }
 
 function addAfternoonCheck() {
+    const checkButton = document.createElement("input")
+    checkButton.type = "checkbox"
+
     removeListener()
     removeClass()
 
+    afternoonDiv.appendChild(checkButton)
 }
 
 function addEveningCheck() {
+    const checkButton = document.createElement("input")
+    checkButton.type = "checkbox"
+
     removeListener()
     removeClass()
 
+    eveningDiv.appendChild(checkButton)
 }
 
 document.querySelector("#add").addEventListener("click", addCheck);
