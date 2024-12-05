@@ -2,7 +2,7 @@ const morningDiv = document.getElementById("morning")
 const afternoonDiv = document.getElementById("afternoon")
 const eveningDiv = document.getElementById("evening")
 
-
+//set divs as avent listeners and add animations
 function addCheck() {
     document.querySelector("#morning").addEventListener("click", addMorningCheck)
     morningDiv.classList.add("animation")
@@ -26,6 +26,7 @@ function removeClass() {
     eveningDiv.classList.remove("animation")
 }
 
+//append checkbutton
 function addMorningCheck() {
     const checkButton = document.createElement("input")
     checkButton.type = "checkbox"
@@ -56,4 +57,6 @@ function addEveningCheck() {
     eveningDiv.appendChild(checkButton)
 }
 
-document.querySelector("#add").addEventListener("click", addCheck);
+
+//first event listener
+document.querySelector("#addCheck").addEventListener("click", addCheck);

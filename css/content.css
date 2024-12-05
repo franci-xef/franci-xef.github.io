@@ -6,13 +6,19 @@
     margin: 10px;
 
     border: 2px solid black;
-    background-color: rgba(203, 184, 215, 0.9);;
+    background-color: rgba(203, 184, 215, 0.9);
 }
 
-#add {
-    align-self: flex-end;
+#spawnMenu {
+    align-self:first baseline;
     width: 7%;
-    height: 27px;
+    height: 100%;
+}
+
+#addCheck {
+    align-self: last baseline;
+    width: 7%;
+    height: 100%;
 }
 
 #listContainer {
@@ -39,7 +45,7 @@
 
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(43px);
-    backdrop-filter: blur(13px);
+    backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.25);
 }
 
