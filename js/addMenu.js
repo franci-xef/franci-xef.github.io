@@ -1,11 +1,13 @@
 const contentDiv = document.getElementById("content")
+const addMenuDiv = document.getElementById("addMenu")
 
-
-function spawnMenu() {
-    const addMenuDiv =  document.createElement("div")
-    addMenuDiv.id = "addMenu"
-    contentDiv.appendChild(addMenuDiv)
-
+function openMenu() {
+    addMenuDiv.style.display = "flex"
 }
 
-document.querySelector("#spawnAddMenu").addEventListener("click", spawnMenu)
+function closeMenu() {
+    addMenuDiv.style.display = "none"
+}
+
+document.querySelector("#closeMenu").addEventListener("click", closeMenu)
+document.querySelector("#spawnAddMenu").addEventListener("click", openMenu)
