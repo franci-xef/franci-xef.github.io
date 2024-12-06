@@ -35,70 +35,11 @@
 
 .checkList {
     width: 100%;
-    
 
     background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(43px);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255,255,255,0.25);
-}
-
-#addMenu {
-    display: none;
-    flex-direction: column;
-
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
-
-    
-
-    align-self: center;
-    background-color: rgba(47, 79, 79, 0.5);
-    -webkit-backdrop-filter: blur(43px);
-    backdrop-filter: blur(20px);
-}
-
-#menuTitleContainer {
-    display: flex;
-    flex-direction: row;
-    
-    
-    padding: 10px;
-    height: 20%;
-    margin: 5px;
-
-    border-radius: 10px;
-    background-color: rgba(69, 116, 116, 0.6);
-}
-
-#menuTitle {
-    text-align: center;
-    width: 100%;
-}
-
-#menuTitle a {
-    font-size: xx-large;
-    font-family: Courier New;
-}
-
-#closeMenu {
-    text-align: center;
-    width: 10%;
-    height: 100%;
-
-    border-radius: 100px;
-    background-color: aliceblue;
-}
-
-#closeMenu a {
-    font-size: 50px;
-    transition: 0.3s;
-}
-
-#closeMenu:hover {
-    color: aliceblue;
-    background-color: rgb(18, 18, 18);
 }
 
 .checkTitle {
@@ -118,4 +59,8 @@ p {
 
 #buttonContainer, .checkList {
     border-radius: 10px;
+}
+
+.options {
+    
 }
