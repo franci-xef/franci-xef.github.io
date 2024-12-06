@@ -59,4 +59,4 @@ function addEveningCheck() {
 
 
 //first event listener
-document.querySelector("#addCheck").addEventListener("click", addCheck);
+//document.querySelector("#addCheck").addEventListener("click", addCheck);
