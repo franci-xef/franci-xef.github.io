@@ -52,3 +52,7 @@
     color: aliceblue;
     background-color: rgb(18, 18, 18);
 }
+
+@media screen and (max-height: 800px) {
+    #menuTitleContainer {height: 10%;}
+}
