@@ -22,18 +22,8 @@
             <div id="content">
                 <div id="buttonContainer">
                     <button id="spawnMenu" onclick="openNav()">Menu</button>
-                </div>
-                <div id="addMenu">
-                    <div id="menuTitleContainer">
-                        <div id="menuTitle"><a>Aggiungi la tua checklist</a></div>
-                        <div id="closeMenu"><a>&times;</a></div>
-                    </div>
-                    <div class="options"><a>Mattina</a></div>
-                    <div class="options"><a>Pomeriggio</a></div>
-                    <div class="options"><a>Sera</a></div>
-                    <div class="options"><a>Personalizzata</a></div>
-                </div>
-                <!--<div id="listContainer">   
+                </div>               
+                <div id="listContainer">   
                     <div class="checkList" id="morning">
                         <div class="checkTitle"><p>Mattina</p></div>
                     </div>    
@@ -42,8 +32,37 @@
                     </div>      
                     <div class="checkList" id="evening">
                         <div class="checkTitle"><p>Sera</p></div>
+                    </div>
+                    <div class="checkList" id="custom">
+                        <div class="checkTitle"><p>Personalizzata</p></div>
                     </div>      
-                </div>-->
+                </div>
+                <div id="addMenu">
+                    <div id="menuTitleContainer">
+                        <div id="menuTitle"><a>Aggiungi la tua checklist</a></div>
+                        <div id="closeMenu"><a>&times;</a></div>
+                    </div>
+                    <div class="optionContainer">
+                        <div class="options"><a>Mattina</a></div> 
+                        <div id="remMorning">-</div>
+                        <div id="addMorning">+</div>
+                    </div>                   
+                    <div class="optionContainer">
+                        <div class="options"><a>Pomeriggio</a></div>
+                        <div id="remAfternoon">-</div>
+                        <div id="addAfternoon">+</div>
+                    </div>
+                    <div class="optionContainer">
+                        <div class="options"><a>Sera</a></div>
+                        <div id="remEvening">-</div>
+                        <div id="addEvening">+</div>
+                    </div>
+                    <div class="optionContainer">
+                        <div class="options"><a>Personalizzata</a></div>
+                        <div id="remCustom">-</div>
+                        <div id="addCustom">+</div>
+                    </div>
+                </div> 
             </div>
             <div id="footer"></div>
         </div>

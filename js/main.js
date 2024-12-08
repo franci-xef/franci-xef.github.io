@@ -1,62 +1,46 @@
-const morningDiv = document.getElementById("morning")
-const afternoonDiv = document.getElementById("afternoon")
-const eveningDiv = document.getElementById("evening")
+const morning = document.getElementById("morning")
+const afternoon =document.getElementById("afternoon")
+const evening = document.getElementById("evening")
+const custom = document.getElementById("custom")
 
-//set divs as avent listeners and add animations
-function addCheck() {
-    document.querySelector("#morning").addEventListener("click", addMorningCheck)
-    morningDiv.classList.add("animation")
-    
-    document.querySelector("#afternoon").addEventListener("click", addAfternoonCheck)
-    afternoonDiv.classList.add("animation")
 
-    document.querySelector("#evening").addEventListener("click", addEveningCheck)
-    eveningDiv.classList.add("animation")
+function addMorning() {
+    morning.style.display = "flex"
 }
 
-function removeListener() {
-    document.querySelector("#morning").removeEventListener("click", addMorningCheck)
-    document.querySelector("#afternoon").removeEventListener("click", addAfternoonCheck)
-    document.querySelector("#evening").removeEventListener("click", addEveningCheck)
+function addAfternoon() {
+    afternoon.style.display = "flex"
 }
 
-function removeClass() {
-    morningDiv.classList.remove("animation")
-    afternoonDiv.classList.remove("animation")
-    eveningDiv.classList.remove("animation")
+function addEvening() {
+    evening.style.display = "flex"
 }
 
-//append checkbutton
-function addMorningCheck() {
-    const checkButton = document.createElement("input")
-    checkButton.type = "checkbox"
-
-    removeListener()
-    removeClass()
-
-    morningDiv.appendChild(checkButton)
+function addCustom() {
+    custom.style.display = "flex"
 }
 
-function addAfternoonCheck() {
-    const checkButton = document.createElement("input")
-    checkButton.type = "checkbox"
-
-    removeListener()
-    removeClass()
-
-    afternoonDiv.appendChild(checkButton)
+function removeMorning() {
+    morning.style.display = "none"
 }
 
-function addEveningCheck() {
-    const checkButton = document.createElement("input")
-    checkButton.type = "checkbox"
-
-    removeListener()
-    removeClass()
-
-    eveningDiv.appendChild(checkButton)
+function removeAfternoon() {
+    afternoon.style.display = "none"
 }
 
+function removeEvening() {
+    evening.style.display = "none"
+}
 
-//first event listener
-//document.querySelector("#addCheck").addEventListener("click", addCheck);
+function removeCustom() {
+    custom.style.display = "none"
+}
+
+document.querySelector("#addMorning").addEventListener("click", addMorning)
+document.querySelector("#addAfternoon").addEventListener("click", addAfternoon)
+document.querySelector("#addEvening").addEventListener("click", addEvening)
+document.querySelector("#addCustom").addEventListener("click", addCustom)
+document.querySelector("#remMorning").addEventListener("click", removeMorning)
+document.querySelector("#remAfternoon").addEventListener("click", removeAfternoon)
+document.querySelector("#remEvening").addEventListener("click", removeEvening)
+document.querySelector("#remCustom").addEventListener("click", removeCustom)

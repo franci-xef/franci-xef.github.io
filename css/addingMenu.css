@@ -1,5 +1,7 @@
 #addMenu {
     display: none;
+    position: absolute;
+
     flex-direction: column;
 
     width: 50%;
@@ -27,24 +29,28 @@
 #menuTitle {
     text-align: center;
     width: 100%;
+    
 }
 
 #menuTitle a {
     font-size: x-large;
-    font-family: Courier New;
+    font-family: Comic Sans MS;
 }
 
 #closeMenu {
-    text-align: center;
-    width: 10%;
-    height: 100%;
-
-    border-radius: 100px;
-    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    
+    width: 13%;
+    
+    border-radius: 80px;
+    background-color: aliceblue;  
 }
 
 #closeMenu a {
+    text-align: center;
     font-size: 50px;
+    
     transition: 0.3s;
 }
 
@@ -53,6 +59,47 @@
     background-color: rgb(18, 18, 18);
 }
 
-@media screen and (max-height: 800px) {
+.openAnimation {
+    animation: 0.2s ease-in-out 1 opening;
+}
+
+@keyframes opening {
+    from {scale: 0%;}
+    to {scale: 100%;}
+}
+
+.closeAnimation {
+    animation: 0.2s ease-in-out 1 closing;
+}
+
+@keyframes closing {
+    from {scale: 100%;}
+    to {scale: 0%;}
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+}
+
+.options {
+    width: 90%;
+    
+    font-size: x-large;
+}
+
+#addMorning, #remMorning, #addAfternoon, #remAfternoon, #addEvening, #remEvening, #addCustom, #remCustom {
+    width: 10%;
+
+    font-size: x-large;
+    text-align: center;
+
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+@media screen and (min-height: 800px) {
     #menuTitleContainer {height: 10%;}
 }
